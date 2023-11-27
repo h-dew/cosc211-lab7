@@ -9,6 +9,13 @@ main:
 	li $t1, 5
 
 loop:
+	li $s0, 0x7FFFFFFF
+	li $s1, 0x000FFFFF
+
+	li $t0, 0
+	li $t1, 5
+
+
 	li $v0, 4		#print loop message   
 	la $a0, str
      	syscall
